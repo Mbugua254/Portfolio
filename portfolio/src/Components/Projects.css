@@ -1,0 +1,301 @@
+.projects-container {
+    padding: 2em 5%; /* Adjust side padding */
+    background-color: rgb(18, 18, 18); /* Dark background */
+    color: #f5f5f5;
+    width: 60%; /* Set the container to take up 60% of the width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .projects-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to next row */
+    justify-content: center;
+    gap: 2em; /* Increased spacing between cards */
+  }
+  
+  .project-card {
+    width: 40%; /* Cards take up 40% of the container width */
+    aspect-ratio: 2 / 1; /* 2x1 aspect ratio: more wide than tall */
+    background-color: rgba(44, 44, 44, 0.4); /* Even more transparent dark gray */
+    backdrop-filter: blur(12px); /* Enhanced frosted glass effect */
+    border-radius: 20px; /* Rounder corners */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08); /* Softer, more spread shadow */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.8em; /* More padding for breathing room */
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Slightly slower, smoother transition */
+    border: 1px solid rgba(255, 255, 255, 0.03); /* More subtle border */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px) scale(1.01); /* More subtle transform */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 
+                0 0 0 1px rgba(255, 255, 255, 0.08); /* Layered shadow effect */
+    background-color: rgba(44, 44, 44, 0.5); /* Slightly less contrast on hover */
+    border-color: rgba(255, 255, 255, 0.08); /* Subtle border enhancement */
+  }
+  
+  .project-image {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 40%;
+    height: 70%;
+    object-fit: cover;
+    opacity: 0.15; /* Even more subtle image */
+    z-index: 0;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    opacity: 0.25; /* Slightly more visible on hover */
+  }
+  
+  .project-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .project-title {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    color: rgba(255, 214, 10, 0.9); /* Slightly transparent yellow */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .project-description {
+    font-size: 0.95em;
+    color: rgba(221, 221, 221, 0.9);
+    line-height: 1.5;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 0.8em;
+    color: #1db954;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .project-link:hover {
+    color: #23e066;
+    opacity: 1;
+  }
+  
+  /* Technology section */
+  .project-stack {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 3em;
+    border-radius: 24px;
+    margin-top: 4em;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(44, 44, 44, 0.7), rgba(33, 33, 33, 0.8));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-stack h4 {
+    font-size: 1.8em;
+    margin-bottom: 1.8em;
+    color: rgba(255, 214, 10, 0.95);
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-stack ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .project-stack ul li {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.95);
+    padding: 0.6em 1.2em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-stack ul li:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, rgba(255, 214, 10, 0.15), rgba(255, 214, 10, 0.05));
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 214, 10, 0.3);
+  }
+  
+  .project-title-text {
+    text-align: center;
+    margin-block: 3%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 800px) {
+    .project-card {
+      width: 90%;
+      margin: 0 auto;
+      aspect-ratio: 1 / 1;
+    }
+  
+    .project-image {
+      height: 40%;
+    }
+  
+    .projects-container {
+      padding: 2em 5%;
+      width: 80%;
+    }
+  
+    .project-stack ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-list {
+      justify-content: center;
+    }
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 0 2em;
+  }
+  
+  .experience-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 15px;
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 214, 10, 0.3);
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+  
+  .experience-header h3 {
+    color: rgba(255, 214, 10, 0.9);
+    font-size: 1.3em;
+    margin: 0;
+  }
+  
+  .period {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9em;
+  }
+  
+  .experience-card h4 {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5em 0;
+    font-size: 1.1em;
+  }
+  
+  .experience-card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.5em 0 0;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 800px) {
+    .experience-list {
+      padding: 0 1em;
+    }
+    
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+    
+    .experience-card {
+      padding: 1.2em;
+    }
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    background: rgba(44, 44, 44, 0.4);
+    padding: 0.3rem;
+    border-radius: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgba(255, 214, 10, 0.3);
+  }
+  
+  .toggle-btn {
+    position: relative;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    min-width: 120px;
+  }
+  
+  .toggle-btn.active {
+    background-color: rgba(255, 214, 10, 0.2);
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .active-indicator {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .toggle-buttons {
+      width: 90%;
+    }
+    
+    .toggle-btn {
+      padding: 0.8rem 1rem;
+      min-width: 100px;
+      font-size: 1rem;
+    }
+  }

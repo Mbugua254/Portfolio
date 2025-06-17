@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import { FaCode, FaReact, FaDatabase, FaCogs, FaTools, FaUserFriends } from 'react-icons/fa'; // Importing React FA icons
+import { FaCode, FaDatabase, FaCogs, FaTools, FaUserFriends } from 'react-icons/fa'; // Importing React FA icons
 
 const About = () => {
   return (

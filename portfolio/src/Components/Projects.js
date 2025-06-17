@@ -80,11 +80,11 @@ const Projects = () => {
     setSelectedProject(null);
   };
 
-  const toggleView = () => {
-    setShowProjects(!showProjects);
-  };
+  //const toggleView = () => {
+   // setShowProjects(!showProjects);
+  //};
 
-  const shuffleTechnologies = () => {
+  /*const shuffleTechnologies = () => {
     setTechnologies(prevTech => {
       const shuffled = [...prevTech];
       for (let i = shuffled.length - 1; i > 0; i--) {
@@ -93,7 +93,7 @@ const Projects = () => {
       }
       return shuffled;
     });
-  };
+  };*/
 
   const containerVariants = {
     hidden: { opacity: 0 },

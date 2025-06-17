@@ -1,6 +1,6 @@
 import React from 'react';
 import './Links.css';
-import { FaInstagram, FaYoutube, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Import Framer Motion
 
 const Links = () => {

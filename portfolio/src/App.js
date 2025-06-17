@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga4';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import Navigation from './Components/Navigation';
 import './App.css';
 import Home from './Components/Home';
@@ -15,7 +15,7 @@ import Projects from './Components/Projects'
 //ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
-  const location = useLocation();
+  //const location = useLocation();
 
   //useEffect(() => {
     // Send a page view event on route change

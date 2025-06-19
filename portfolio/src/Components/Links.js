@@ -40,7 +40,7 @@ const Links = () => {
             icon: <FaLinkedin />,
           },
           {
-            name: 'Mike',
+            name: 'Instagram',
             description: 'Follow my instagram',
             href: 'https://www.instagram.com/dev_mike254/',
             icon: <FaInstagram />,

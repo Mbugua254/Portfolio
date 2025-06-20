@@ -255,4 +255,9 @@
     height: 350px;
     padding-top: 30px;
   }
+  @media screen and (max-width: 768px) {
+    .home-image-section {
+      display: none;
+    }
+  }
   

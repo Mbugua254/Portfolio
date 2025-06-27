@@ -6,9 +6,18 @@ import Tours from '../Images/Tours.jpg'
 import Movie from '../Images/Movie.jpg'
 import Weather from '../Images/Weather.jpg'
 import Futuretech from '../Images/Futuretech.jpg'
+import Touring from '../Images/Touring.jpg'
 import Modal from './Modal';
 
 const projects = [
+  {
+    name: 'Tour Agency Website',
+    description: 'This is the official website for Starluck Travel LTD, a tours and travel agency based in Nairobi Kenya.',
+    codeLink: 'https://starlucktravel.com',
+    longDescription: 'The website showcases the services offered by the company. Latest packages, offers and discounted rates for different tour destinations. The website has been a game changer for the company as it has put the business out there resulting in rocketing of the sales in the company. It follows the best design practices, seo and is very user friendly. It is also responsive on all devices',
+    image: Touring,
+    stack: ['Javascript', 'WordPress', 'CSS', 'HTML'],
+  },
   {
     name: 'Tours and Travel Booking App',
     description: 'Full-Stack Web App for Booking Travel Destinations',
@@ -276,7 +285,7 @@ const Projects = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        View Code
+                        View Project
                       </motion.a>
                     )}
                   </div>

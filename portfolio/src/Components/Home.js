@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'; // Import styling
 import { FaInstagram, FaLinkedinIn, FaGithub, FaRegEnvelope } from "react-icons/fa";
-import profilepic from '../Images/profilepic.jpeg';
+import Front from '../Images/Front.jpeg'
 import About from './About'; // Import About component
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         
          <div className="home-image-section">
             <img
-              src={profilepic}
+              src={Front}
               alt="Mikey"
               className="home-large-image"
             />

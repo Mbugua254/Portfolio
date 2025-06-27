@@ -1,6 +1,6 @@
 import React from 'react';
 import './Links.css';
-import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaPhone, FaRegEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Import Framer Motion
 
 const Links = () => {
@@ -50,6 +50,24 @@ const Links = () => {
             description: 'Check my code',
             href: 'https://github.com/Mbugua254',
             icon: <FaGithub />,
+          },
+          {
+            name: 'WhatsApp',
+            description: 'WhatsApp Me',
+            href: 'https://wa.me/254743108593',
+            icon: <FaWhatsapp />,
+          },
+          {
+            name: 'Mobile',
+            description: 'Call Me',
+            href: 'tel:+254743108593',
+            icon: <FaPhone />,
+          },
+          {
+            name: 'Email',
+            description: 'Send an Email',
+            href: 'mailto:mikembugua254@gmail.com',
+            icon: <FaRegEnvelope />,
           },
         ].map((link, index) => (
           <motion.li

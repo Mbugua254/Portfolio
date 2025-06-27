@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 import { NavLink } from 'react-router-dom';
-import { FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaEnvelope, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 const Navigation = () => {
   return (
@@ -42,6 +42,20 @@ const Navigation = () => {
 
       {/* Social media links on the right */}
       <div className="navigation-social-links">
+      <a
+          href="tel:+254743108593"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaPhone className="link-icon-nav" />
+        </a>
+      <a
+          href="https://wa.me/254743108593"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="link-icon-nav" />
+        </a>
         <a
           href="https://www.instagram.com/dev_mike254/"
           target="_blank"
